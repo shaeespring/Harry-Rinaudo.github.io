@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <head>
+        <title>Main Page</title>
+    </head>
+    <body>
+        <div id="myPlot" style="width:100%;max-width:700px;position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"></div>
+        <script>
+        const xArray = [80, 20];
+        const yArray = ["Spendings", "Income"];
+
+        const data = [{
+            labels: yArray,
+            values: xArray,
+            type: "pie",
+        }];
+
+        const layout = {title:"Current Budget"};
+
+        Plotly.newPlot("myPlot", data, layout);
+
+        </script>
+        
+        <div id="account" style="position:absolute; top: 50%; left: 10%; transform: translate(-20%, -20%);">
+        <img src="account picture.png" alt="Account Icon" style="width:200%;max-width:700px;position: absolute; top: 0%; left: 50%; transform: translate(-50%, -50%);">
+        <p>Account</p>
+    </div>
+    </body>
+</html>
