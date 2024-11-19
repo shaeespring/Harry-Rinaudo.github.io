@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+   color: orange;
+   text-align: center;
+   border-style: solid;
+}
+
+h2 {
+	text-align: center;
+}
+
+p {
+	font-size: 20px;
+    text-align: center;
+}
+
+.orange {
+    width: 33%;
+    background-color: orange;
+    margin-left: 11%;
+}
+
+button {
+    background-color: black;
+    color: orange;
+    border-radius: 20px;
+    margin: auto;
+    display: block;
+}
+.buttonInput {
+	text-align: center;
+}
+</style>
+<script>
+const money = ["","","","","","","","","",""];
+var total = 500;
+
+function addFunds(){
+	let num = document.getElementById("addedAmount").value;
+    total = Number(total) + Number(num);
+    document.getElementById("total").innerHTML = "$" + total;
+}
+
+function spent(){
+  let num = document.getElementById("spentNum").value;
+  let reason = document.getElementById("spentReason").value;
+  var text =  "";
+  for (let i = 9; i > 0; i--){
+      money[i] = money[i-1];
+  }
+  money[0] = reason + " -$" + num + " ";
+  for(let i=0;i<money.length; i++){
+      text += money[i];
+  }
+  total = Number(total) - Number(num);
+  document.getElementById("total").innerHTML = "$" + total;
+  document.getElementById("text").innerHTML = text;
+}
+</script>
+</head>
+<body>
+    <h1>Account Balance</h1>
+    <div style="display: flex;">
+        <div class="orange">
+            <h2>Current Balance</h2>
+            <img src="account picture.png" alt="Account Icon" style="width:80%;max-width:700px;position:relative; left: 10%;">
+            <p id="total">$500</p>
+            <div class="buttonInput">
+            	<button onclick="addFunds()">add funds</button>
+                <label for="total">Amount Added:</label><br>
+            	<input type="text" id="addedAmount"><br>
+                <br>
+            </div>
+            <div class="buttonInput">
+            	<button onclick="spent()">add spending</button>
+                <label for="spentReason">Spending Reason:</label><br>
+            	<input type="text" id="spentReason"><br>
+            	<label for="spentNum">Amount Spent:</label><br>
+            	<input type="text" id="spentNum"><br>
+                <br>
+            </div>
+        </div>
+
+        <div class="orange">
+            <h2>Recent Spending</h2>
+            <p class="money" id="text"></p>
+        </div>
+    </div>
+</body>
+</html>
