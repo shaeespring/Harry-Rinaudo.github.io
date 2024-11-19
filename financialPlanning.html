@@ -30,21 +30,68 @@ button {
     margin: auto;
     display: block;
 }
+
+.buttonInput {
+	text-align: center;
+}
 </style>
+<script>
+
+function Loans(){
+	let amount = document.getElementById("amountOwed").value;
+    let intrest = document.getElementById("intrest").value;
+    let avgPay = document.getElementById("avgPay").value;
+	time = -(Math.log(1-				(intrest*amount/avgPay))/Math.log(1+intrest));//https://money.stackexchange.com/questions/142800/formula-for-time-taken-to-pay-off-loan-with-annual-interest-and-monthly-repaymen
+    document.getElementById("amountOwed").innerHTML = "$" + amount;
+    document.getElementById("intrest").innerHTML = intrest + "%";
+    document.getElementById("avgPay").innerHTML = "$" + avgPay;
+    document.getElementById("time").innerHTML =  time/12 + " years " + time%12 + " months";
+}
+</script>
 </head>
 <body>
     <h1>Financial Planning</h1>
     <div style="display: flex;">
         <div class="orange">
             <h2>Student Loans</h2>
-            
-            <div>
-            	<button>Edit Loans</button>
+            <p>Current Amount Owed</p>
+            <p id="amountOwed">$100000</p>
+            <p>Yearly Intrest</p>
+            <p id="intrest">5%</p>
+            <p>Average Payment Annually</p>
+            <p id="avgPay">$10000</p>
+            <p>Time Until Payed Off</p>
+            <p id="time">14 years 2 months</p>
+            <div class="buttonInput">
+            	<button onclick="Loans()">Edit Loans</button>
+                <label for="amountOwed">Amount Owed:</label><br>
+            	<input type="text" id="AmountOwed"><br>
+                <label for="intrest">Yearly Intrest:</label><br>
+            	<input type="text" id="intrest"><br>
+                <label for="avgPay">Average Amount payed Annually:</label><br>
+            	<input type="text" id="avgPay"><br>
+                <br>
             </div>
         </div>
 
         <div class="orange">
             <h2>Saving Goals</h2>
+            <p>Amount to Save</p>
+            <p id="saveGoal">$100000</p>
+            <p>Monthly income</p>
+            <p id="income">$5000</p>
+            <p>Monthly expenses</p>
+            <p id="expenses">$3000</p>
+            <p>Time Until Goal Reached</p>
+            <p id="timeToGoal">4 years 2 months</p>
+            <div class="buttonInput">
+            	<button onclick="Savings()">Edit Savings</button>
+                <label for="saveGoal">Saving Goal:</label><br>
+            	<input type="text" id="saveGoal"><br>
+                <label for="income">Monthly Income:</label><br>
+            	<input type="text" id="income"><br>
+                <label for="expenses">Monthly expenses:</label><br>
+            	<input type="text" id="expenses"><br>
         </div>
     </div>
 </body>
