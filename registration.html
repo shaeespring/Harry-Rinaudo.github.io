@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paw Plan - Welcome</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            padding: 30px;
+            width: 400px;
+            background-color: #fff;
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .arrow {
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            padding: 5px 10px;
+            font-size: 16px;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+
+        .arrow:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Paw Plan</h1>
+
+        <h2>Sign in</h2>
+        <form>
+            <input type="text" placeholder="Username/email">
+            <input type="password" placeholder="Password">
+            <div class="arrow">➔</div>
+        </form>
+
+        <h2>Register</h2>
+        <form>
+            <input type="text" placeholder="New username/email">
+            <input type="password" placeholder="New password">
+            <input type="text" placeholder="University name">
+            <div class="arrow">➔</div>
+        </form>
+    </div>
+</body>
+</html>
