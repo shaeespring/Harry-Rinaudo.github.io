@@ -8,18 +8,23 @@
 header{
     font-size: 40px;
     text-align: center;
-    background-color: orange;
-    color: white;
+    background-color: #F76902;
+    color: black;
     padding: 30px;
 }
-article {
+div {
   -webkit-flex: 3;
   -ms-flex: 3;
   flex: 3;
   background-color: rgb(201, 194, 194);
   padding: 10px;
   float: left;
-  width: 65%;
+  width: 100%;
+  height: 500px;
+  overflow-y:auto
+}
+article{
+    height: 350px;
 }
 h1{
     font-size: 30px;
@@ -28,14 +33,20 @@ aside {
   float: left;
   width: 30%;
   height: 300px; 
-  background: antiquewhite;
-  padding: 20px;
+  background: white;
+  padding: 10px;
 }
 footer{
-    background-color: orange;
+    background-color: #F76902;
     padding: 10px;
     text-align: center;
-    color: white; 
+    color: black; 
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+   
+
 }
 table, th, td{
   border:1px solid black;
@@ -51,10 +62,12 @@ table{
 <header>
     Nearby grocery stores
 </header>
+<div style="overflow-y:scroll;">
 <article>
     <h1>
         Wegmans
     </h1>
+
     <body>
         <img src = "https://www.wegmans.com/wp-content/themes/wegmans/assets/images/WegmansLogo.min.svg" alt = "Wegmans logo">
         <table>
@@ -64,16 +77,89 @@ table{
             <tr>
                 <td><a href="https://www.wegmans.com/" target="_blank">Main Website</a></td>
             </tr>
+            <tr>
+                <td>Accessibility: Campus Shuttle</td>
+            </tr>
+            <tr>
+                <td>Prices: Not too expenssive, but on the higher end of grocery stores</td>
+            </tr>
+            <tr>
+                <td>Products: A wide range of food and other neccessities.</td>
+            </tr>
+            <tr>
+                <td>Rating: 4.6/5</td>
+            </tr>
         </table>
     </body>
 
 </article>
 
-<aside>
+<hr>
+
+<article>
     <h1>
-        test
+        The Market at Global Village
     </h1>
-</aside>
+
+    <body>
+        <img src = "https://www.rit.edu/dining/sites/rit.edu.dining/files/2024-03/Logo_The%20Market_170x170_black.png" width = 300px heigt = 300 px alt = "Picture of the Market at Global Village">
+        <table>
+            <tr>
+                <td>Description: A small market at global village with miscellaneous, easy to prepare meals and snacks</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.rit.edu/dining/location/market-global-village#1" target="_blank">Main Website</a></td>
+            </tr>
+            <tr>
+                <td>Accessibility: On Campus</td>
+            </tr>
+            <tr>
+                <td>Prices: Affordable for students, takes dining dollars</td>
+            </tr>
+            <tr>
+                <td>Products: Has many snacks and drinks as well as toiletries and school supplies . Great for emergencies and parties, but not full meals.</td>
+            </tr>
+            <tr>
+                <td>Rating: 4.2/5</td>
+            </tr>
+        </table>
+    </body>
+
+</article>
+
+<hr>
+
+<article>
+    <h1>
+        The Corner Store
+    </h1>
+
+    <body>
+        <img src = "https://www.rit.edu/dining/sites/rit.edu.dining/files/2024-03/Logo_The%20Corner%20Store_170x170_black.png" width = 300px heigt = 300 px alt = "Picture of the Market at Global Village">
+        <table>
+            <tr>
+                <td>Description: A convenience store in the dorm-side tunnels</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.rit.edu/dining/location/corner-store" target="_blank">Main Website</a></td>
+            </tr>
+            <tr>
+                <td>Accessibility: On Campus</td>
+            </tr>
+            <tr>
+                <td>Prices: Affordable for students, takes dining dollars</td>
+            </tr>
+            <tr>
+                <td>Products: Simmalar to the Market at Global Village, It's a convenience store.</td>
+            </tr>
+            <tr>
+                <td>Rating: 4.1/5</td>
+            </tr>
+        </table>
+    </body>
+
+</article>
+</div>
 
 <footer>
     <b2>
