@@ -2,49 +2,134 @@
 <html>
 
 <head>
-
-<style>
-    h1 {color:#f0882c;
-    text-align: left;}
+    <!--STYLING STARTS HERE-->
+    <style>
     
-    p {color:blue;
-    text-align: center;}
-    
-.button {
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 300px 100px;
-    cursor: pointer;
-}
+        body {
+            font-family: Arial;
+            margin: 0;
+            padding: 0;
+            background-color: #F76902; 
+        }
+
+        .header {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            color: black;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        .box {
+            flex: 1;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            
+        }
+
+        .box h2 {
+            text-align: center;
+            color: black;
+        }
+
+        .box p {
+            text-align: center;
+            color: black;
+            margin: 10px 0;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            background-color: #e0e0e0;
+            border: none;
+            color: black;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #e0e0e0;
+            border: 1px solid #ccc;
+            color: black;
+            padding: 10px 10px;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
 
 
-.button1 {background-color: #F76902;} 
-.button2 {background-color: #F76902;} 
-</style>
-
+    </style>
 </head>
 
 <body>
-    <html>
 
-        <body>
-        
-        <h1>A heading</h1>
-        <p>A paragraph.</p>
-        
-        </body>
-        </html> 
+    <!-- Titles -->
+    <div class="header">
+        <button class="back-button">Back to Budget Info</button>
+        <h1>Financial Planning</h1>
+    </div>
 
-<h1>Paw Plan</h1>
-<p>Financial Planning</p>
+    
+    <div class="container">
+        <!-- student Loans -->
+        <div class="box">
+            <h2>Student Loans</h2>
+            <p>Current Amount Owed</p>
+            <p>$75000</p>
+            <p>Interest</p>
+            <p>10%</p>
+            <p>Average Payment</p>
+            <p>$350</p>
+            <p>Time Until Paid Off</p>
+            <p>25 Years, 5 Months</p>
+            <div class="button-container">
+                <button class="button">Edit Loans</button>
+            </div>
+        </div>
 
-<button class="button button1">Edit Tuition</button>
-<button class="button button2">Edit Expences</button>
+        <!-- Savings -->
+        <div class="box">
+            <h2>Savings Goals</h2>
+            <p>Amount To Save</p>
+            <p>$2000</p>
+            <p>Monthly Income</p>
+            <p>$250</p>
+            <p>Monthly Expenses</p>
+            <p>$100</p>
+            <p>Time Until Goal Reached</p>
+            <p>1 Years, 10 Months</p>
+            <div class="button-container">
+                <button class="button">Edit Savings</button>
+            </div>
+        </div>
+    </div>
 
 </body>
+
 </html>
