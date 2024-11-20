@@ -23,23 +23,30 @@
             color: black;
         }
 
-        .container {
+        .paw-plan {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 30px;
+            font-weight: bold;
+            color: black;
+        }
+        .main-boxes-box {
             display: flex;
             justify-content: space-around;
             align-items: flex-start;
             margin: 20px;
             padding: 20px;
             background-color: white;
-            border-radius: 10px;
         }
 
         .box {
             flex: 1;
             margin: 10px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
+            border: 1px solid black;
             padding: 20px;
             background-color: #f9f9f9;
+            
             
         }
 
@@ -52,6 +59,7 @@
             text-align: center;
             color: black;
             margin: 10px 0;
+            min-height: 40px;
         }
 
         .button-container {
@@ -67,7 +75,6 @@
             text-align: center;
             font-size: 16px;
             cursor: pointer;
-            border-radius: 5px;
         }
 
         .back-button {
@@ -80,7 +87,6 @@
             padding: 10px 10px;
             font-size: 14px;
             cursor: pointer;
-            border-radius: 5px;
         }
 
 
@@ -89,24 +95,28 @@
 
 <body>
 
+<!--ACTUAL IMPLEMENTATION-->
+
     <!-- Titles -->
+
     <div class="header">
+        <div class="paw-plan">Paw Plan</div>
         <button class="back-button">Back to Budget Info</button>
         <h1>Financial Planning</h1>
     </div>
 
     
-    <div class="container">
+    <div class="main-boxes-box">
         <!-- student Loans -->
         <div class="box">
-            <h2>Student Loans</h2>
-            <p>Current Amount Owed</p>
+            <h2>Student Loans:</h2>
+            <p><strong>Current Amount Owed:</strong></p>
             <p>$75000</p>
-            <p>Interest</p>
+            <p><strong>Interest:</strong></p>
             <p>10%</p>
-            <p>Average Payment</p>
+            <p><strong>Average Payment:</strong></p>
             <p>$350</p>
-            <p>Time Until Paid Off</p>
+            <p><strong>Time Until Paid Off:</strong></p>
             <p>25 Years, 5 Months</p>
             <div class="button-container">
                 <button class="button">Edit Loans</button>
@@ -116,13 +126,13 @@
         <!-- Savings -->
         <div class="box">
             <h2>Savings Goals</h2>
-            <p>Amount To Save</p>
+            <p><strong>Amount to Save:</strong></p>
             <p>$2000</p>
-            <p>Monthly Income</p>
+            <p><strong>Monthly Income:</strong></p>
             <p>$250</p>
-            <p>Monthly Expenses</p>
+            <p><strong>Monthly Expenses:</strong></p>
             <p>$100</p>
-            <p>Time Until Goal Reached</p>
+            <p><strong>Time Until Goal Reached:</strong></p>
             <p>1 Years, 10 Months</p>
             <div class="button-container">
                 <button class="button">Edit Savings</button>
