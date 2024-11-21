@@ -3,7 +3,9 @@
     background-color: white;
 }
 
-
+a{
+    text-decoration: none;
+}
 #box-container {
     padding-top: 3.5%;
     display: flex;
