@@ -4,88 +4,81 @@
     <head>
         <title>Main Page</title>
         <style>
+            :root {
+                --background-color: #F76902;
+            }
+
             body {
                 font-family: Arial, sans-serif;
             }
 
+            section {
+                display: inline-flex;
+                justify-content: space-between;
+            }
+
             #myPlot {
-                width:70%;
-                max-width:700px;
-                display: flex;
-                justify-content: center;
-                border-radius: 5px;
                 border: solid black 2px;
             }
 
             #box-container {
-                padding-top: 3.5%;
-                background-color: #F76902;
-                display: flex;
-                flex-wrap: wrap;
-                /* justify-content: center; */
+                background-color: var(--background-color);
             }
 
             .image-container{
-                width: 20%;
-                background-color: #F76902;
+                background-color: var(--background-color);
                 display: flex;
-                justify-content: start;
                 flex-direction: column;
+                text-align: center;
                 border-radius: 5px;
                 border: solid black 2px;
                 background-color: white;
-                height: 20%;
-                width: 10%;
-                margin: 2.5%;
+                width: 20%;
             }
-            
 
         </style>
     </head>
     <body>
-        
-        
         <h2><b>Paw Plan</b></h2>
-        <div id="myPlot"> 
-            <script>
-                const xArray = [80, 20];
-                const yArray = ["Spendings", "Income"];
-        
-                const data = [{
-                    labels: yArray,
-                    values: xArray,
-                    type: "pie",
-                }];
-        
-                const layout = {title:"Current Budget"};
-        
-                Plotly.newPlot("myPlot", data, layout);
-        
+        <section>
+            <div>
+                <div class="image-container">
+                    <img src="pictures/account picture.png" alt="Account Icon">
+                    <p>Account</p>
+                </div>
+                <div class="image-container">
+                    <img src="pictures/groceries icon.png" alt="Groceries Icon">
+                    <p>Groceries</p>
+                </div>
+            </div>
+            <div id="myPlot"> 
+                <script>
+                    const xArray = [80, 20];
+                    const yArray = ["Spendings", "Income"];
+            
+                    const data = [{
+                        labels: yArray,
+                        values: xArray,
+                        type: "pie",
+                    }];
+            
+                    const layout = {title:"Current Budget"};
+            
+                    Plotly.newPlot("myPlot", data, layout);
+            
                 </script>
-        </div>
-        <div id="box_container">
-            <div class="image-container">
-                <img src="pictures/account picture.png" alt="Account Icon">
-                <p>Account</p>
             </div>
-            
-            <div class="image-container">
-                <img src="pictures/groceries icon.png" alt="Groceries Icon">
-                <p>Groceries</p>
+            <div>
+                <div class="image-container">
+                    <img src="pictures/budget icon.png" alt="Budget Icon">
+                    <p>Budget</p>
+                </div>
+                <div class="image-container">
+                    <img src="pictures/restaurant icon.png" alt="Restaurant Icon">
+                    <p>Dining</p>
+                </div>
             </div>
-            <div class="image-container">
-                <img src="pictures/budget icon.png" alt="Budget Icon">
-                <p>Budget</p>
-            </div>
-
-            
-
-            <div class="image-container">
-                <img src="pictures/restaurant icon.png" alt="Restaurant Icon">
-                <p>Dining</p>
-            </div>
-            
-        </div>
+        </section>
         
         
     </body>
