@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--STYLING STARTS HERE-->
+    <style>
+        a{
+            text-decoration: none;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F76902;
+        }
+
+        .header {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            color: black;
+        }
+
+        .paw-plan {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 30px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .main-boxes-box {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .box {
+            flex: 1;
+            margin: 10px;
+            border: 1px solid black;
+            padding: 20px;
+            background-color: #f9f9f9;
+
+
+        }
+
+        .box h2 {
+            text-align: center;
+            color: black;
+        }
+
+        .box p {
+            text-align: center;
+            color: black;
+            margin: 10px 0;
+            min-height: 40px;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            background-color: #e0e0e0;
+            border: none;
+            color: black;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #e0e0e0;
+            border: 1px solid #ccc;
+            color: black;
+            padding: 10px 10px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--ACTUAL IMPLEMENTATION-->
+
+    <!-- Titles -->
+
+    <div class="header">
+        <div class="paw-plan"><a href="mainPage.html" target="_blank">Paw Plan</a></div>
+        <button class="back-button"><a href="budget.html">Back to Budget Info</a></button>
+        <h1>Tuition and Fees</h1>
+    </div>
+
+
+    <div class="main-boxes-box">
+        <!-- student Loans -->
+        <div class="box">
+            <h2>Student Loan:</h2>
+            <p><strong>Tuition:</strong></p>
+            <p>$75000</p>
+            <p><strong>Board:</strong></p>
+            <p>$2500</p>
+            <p><strong>Textbooks:</strong></p>
+            <p>$350</p>
+            <p><strong>Other:</strong></p>
+            <p>$2000</p>
+            <p><strong>Total:</strong></p>
+            <p>$80000</p>
+            <div class="button-container">
+                <button class="button">Edit Loans</button>
+            </div>
+        </div>
+
+        <!-- Savings -->
+        <div class="box">
+            <h2>Expenses</h2>
+            <p><strong>Rent:</strong></p>
+            <p>$2000</p>
+            <p><strong>Car Lease:</strong></p>
+            <p>$250</p>
+            <p><strong>Utilities:</strong></p>
+            <p>$100</p>
+            <p><strong>Total:</strong></p>
+            <p>$2350</p>
+            <div class="button-container">
+                <button class="button">Edit Fees</button>
+            </div>
+        </div>
+        <!--  -->
+        <div class="box">
+            <h2>Expenses</h2>
+            <p><strong>Total Expected Monthly Expenses:</strong></p>
+            <p>$2000</p>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

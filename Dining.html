@@ -1,26 +1,34 @@
 <!DOCTYPE html>
+<head>
+    <title>Dining</title>
+</head>
 <style>
+a{
+    text-decoration: none;
+}
+body {
+    font-family: Arial, sans-serif;
+}
 .Grocery-Container{
     height: 100px;
     width: 200px;
-    }
+}
 
-header{
-    font-size: 40px;
-    text-align: center;
+#header{
+    font-size: 20px;
     background-color: #F76902;
     color: black;
-    padding: 30px;
+    height: 100%;
+    
 }
 div {
   -webkit-flex: 3;
   -ms-flex: 3;
   flex: 3;
-  background-color: rgb(201, 194, 194);
-  padding: 10px;
+  background-color: white;
   float: left;
   width: 100%;
-  height: 500px;
+  height: 100%;
   overflow-y:auto
 }
 article{
@@ -55,14 +63,16 @@ table, th, td{
 table{
     width: 25%;
     float: right;
+    background-color: white;
 }
 </style>
 
-<p><b><a href="mainPage.html">Paw Plan</a></b</p>
-<header>
-    On Campus Dining Options
-</header>
-<div style="overflow-y:scroll;">
+
+<div id=header>
+    <h2><a href="mainPage.html" target="_blank">Paw Plan</a></h2>
+    <h1 style="text-align: center;">On Campus Dining Options</h1>
+</div>
+<div style="overflow:hidden">
 <article>
     <h1>
         Gracie's
@@ -159,7 +169,7 @@ table{
                 <td>Location: Grace Watson Hall</td>
             </tr>
             <tr>
-                <td>Prices: <b>Do later</b></td>
+                <td>Prices: <b>Like Starbucks</b></td>
             </tr>
             <tr>
                 <td>Products: Coffee and baked goods</td>
@@ -236,7 +246,7 @@ table{
                 <td>Prices: A bit pricier than most places on campus.</td>
             </tr>
             <tr>
-                <td>Products: Pancakes, bacon, and eggs for breakfast,   <b>Do later</b></td>
+                <td>Products: Pancakes, bacon, and eggs</td>
             </tr>
             <tr>
                 <td>Rating: 3/5</td>
@@ -348,7 +358,7 @@ table{
                 <td>Location: Global Village</td>
             </tr>
             <tr>
-                <td>Prices: <b>Do later</b></td>
+                <td>Prices: <b>Affordable</b></td>
             </tr>
             <tr>
                 <td>Products: Mexican food and monthly rotating cuisine.</td>
@@ -386,7 +396,7 @@ table{
                 <td>Location: Golisano College of Computing</td>
             </tr>
             <tr>
-                <td>Prices: <b>Do later</b></td>
+                <td>Prices: <b>Relatively inexpenssive</b></td>
             </tr>
             <tr>
                 <td>Products: Deli items like sandwiches, pizzas, paninis, and wraps</td>
@@ -461,7 +471,7 @@ table{
                 <td>Location: Student Alumni Union</td>
             </tr>
             <tr>
-                <td>Prices: <b>Do later</b></td>
+                <td>Prices: <b>A bit pricey</b></td>
             </tr>
             <tr>
                 <td>Products: traditional hand-crafted sandwiches with premium meats, house-made bagel chips, matzo ball soup, potato salad, latkes, pickles, and Dr. Brown's beverages.</td>
@@ -602,7 +612,7 @@ table{
                 <td>Location: CSD Student Development Center</td>
             </tr>
             <tr>
-                <td>Prices: <d>Do later</d></td>
+                <td>Prices: <d>Same as other coffee shops</d></td>
             </tr>
             <tr>
                 <td>Products: Coffee and baked goods</td>

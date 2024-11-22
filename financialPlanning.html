@@ -2,8 +2,14 @@
 <html>
 <head>
 <style>
+a{
+    text-decoration: none;
+}
+body {
+    font-family: Arial, sans-serif;
+}
 h1 {
-   color: orange;
+   color: #F76902;
    text-align: center;
    border-style: solid;
 }
@@ -19,13 +25,13 @@ p {
 
 .orange {
     width: 33%;
-    background-color: orange;
+    background-color: #F76902;
     margin-left: 11%;
 }
 
 button {
     background-color: black;
-    color: orange;
+    color: #F76902;
     border-radius: 20px;
     margin: auto;
     display: block;
@@ -33,6 +39,17 @@ button {
 
 .buttonInput {
 	text-align: center;
+}
+.back-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    color: black;
+    padding: 10px 10px;
+    font-size: 14px;
+    cursor: pointer;
 }
 </style>
 
@@ -51,7 +68,8 @@ function Loans(){
 </script>
 </head>
 <body>
-    <h3><strong>Paw Plan</strong></h3>
+    <h3><strong><a href="mainPage.html" target="_blank">Paw Plan</a></strong></h3>
+    <button class="back-button"><a href="budget.html">Back to Budget Info</a></button>
     <h1>Financial Planning</h1>
     <div style="display: flex;">
         <div class="orange">

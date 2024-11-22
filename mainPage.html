@@ -3,35 +3,85 @@
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <head>
         <title>Main Page</title>
+        <style>
+            :root {
+                --background-color: #F76902;
+            }
+            a{
+                text-decoration: none;
+            }
+            body {
+                font-family: Arial, sans-serif;
+            }
+
+            section {
+                display: inline-flex;
+                justify-content: space-between;
+            }
+
+            #myPlot {
+                border: solid black 2px;
+            }
+
+            #box-container {
+                background-color: var(--background-color);
+            }
+
+            .image-container{
+                background-color: var(--background-color);
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                border-radius: 5px;
+                border: solid black 2px;
+                background-color: white;
+                width: 20%;
+            }
+
+        </style>
     </head>
     <body>
-        <div id="myPlot" style="width:70%;max-width:700px;position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"></div>
-        <script>
-        const xArray = [80, 20];
-        const yArray = ["Spendings", "Income"];
-
-        const data = [{
-            labels: yArray,
-            values: xArray,
-            type: "pie",
-        }];
-
-        const layout = {title:"Current Budget"};
-
-        Plotly.newPlot("myPlot", data, layout);
-
-        </script>
-        <p><b>Paw Plan</b></p>
-        <a href= account.html><img src="pictures/account picture.png" alt="Account Icon" style="width:18%;max-width:700px;position:absolute; top: 28.5%; left: 7%; transform: translate(-25%, -20%);"></a>
-        <p style="position:absolute; top: 45%; left: 10.25%; transform: translate(-20%, -20%);">Account</p>
-
-        <a href= budget.html><img src="pictures/budget icon.png" alt="Budget Icon" style="width:10%;max-width:700px;position:absolute; top: 60%; left: 9%; transform: translate(-25%, -20%);"></a>
-        <p style="position:absolute; top: 72%; left: 10.25%; transform: translate(-20%, -20%);">Budget</p>
+        <h2><b><a href="mainPage.html">Paw Plan</a></b></h2>
+        <section>
+            <div>
+                <div class="image-container">
+                    <img src="pictures/account picture.png" alt="Account Icon">
+                    <p><a href="account.html" target="_blank">Account</a></p>
+                </div>
+                <div class="image-container">
+                    <img src="pictures/groceries icon.png" alt="Groceries Icon">
+                    <p><a href="Groceries.html" target="_blank">Groceries</a></p>
+                </div>
+            </div>
+            <div id="myPlot"> 
+                <script>
+                    const xArray = [80, 20];
+                    const yArray = ["Spendings", "Income"];
+            
+                    const data = [{
+                        labels: yArray,
+                        values: xArray,
+                        type: "pie",
+                    }];
+            
+                    const layout = {title:"Current Budget"};
+            
+                    Plotly.newPlot("myPlot", data, layout);
+            
+                </script>
+            </div>
+            <div>
+                <div class="image-container">
+                    <img src="pictures/budget icon.png" alt="Budget Icon">
+                    <p><a href="budget.html" target="_blank">Budget</a></p>
+                </div>
+                <div class="image-container">
+                    <img src="pictures/restaurant icon.png" alt="Restaurant Icon">
+                    <p><a href="Dining.html" target="_blank">Dining</a></p>
+                </div>
+            </div>
+        </section>
         
-        <a href= Groceries.html><img src="pictures/groceries icon.png" alt="Groceries Icon" style="width:7%;max-width:700px;position:absolute; top: 33.5%; left: 84.5%; transform: translate(-25%, -20%);"></a>
-        <p style="position:absolute; top: 45%; left: 85.25%; transform: translate(-20%, -20%);">Groceries</p>
-
-        <a href= Dining.html><img src="pictures/restaurant icon.png" alt="Restaurant Icon" style="width:7%;max-width:700px;position:absolute; top: 60%; left: 84.5%; transform: translate(-25%, -20%);"></a>
-        <p style="position:absolute; top: 72%; left: 85.25%; transform: translate(-20%, -20%);">Dining</p>
+        
     </body>
 </html>

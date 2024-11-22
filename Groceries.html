@@ -1,26 +1,34 @@
 <!DOCTYPE html>
+<head>
+    <title>Groceries</title>
+</head>
 <style>
+a{
+    text-decoration: none;
+}
+body {
+    font-family: Arial, sans-serif;
+}
 .Grocery-Container{
     height: 100px;
     width: 200px;
     }
 
-header{
-    font-size: 40px;
-    text-align: center;
+.header{
+    font-size: 20px;
     background-color: #F76902;
     color: black;
-    padding: 30px;
+    height: 100%;
 }
 div {
   -webkit-flex: 3;
   -ms-flex: 3;
   flex: 3;
-  background-color: rgb(201, 194, 194);
+  background-color: white;
   padding: 10px;
   float: left;
   width: 100%;
-  height: 500px;
+  height: 600px;
   overflow-y:auto
 }
 article{
@@ -66,39 +74,40 @@ h1{
 </style>
 
 <p><b><a href="mainPage.html">Paw Plan</a></b</p>
-
-<header>
-    Nearby grocery stores
-</header>
-<div style="overflow-y:scroll;">
+<body>
+<div class=header>
+    <h2><a href="mainPage.html" target="_blank">Paw Plan</a></h2>
+    <h1 style="text-align: center;">Nearby grocery stores</h1>
+    
+</div>
+<div style="overflow:visible">
 <article>
     <h1>
         Wegmans
     </h1>
 
-    <body>
-        <img src = "https://www.wegmans.com/wp-content/themes/wegmans/assets/images/WegmansLogo.min.svg" alt = "Wegmans logo">
-        <table>
-            <tr>
-                <td>Description: Wegmans is a general grocery store with many of the groceries you'd need for daily life</td>
-            </tr>
-            <tr>
-                <td><a href="https://www.wegmans.com/" target="_blank">Main Website</a></td>
-            </tr>
-            <tr>
-                <td>Accessibility: Campus Shuttle</td>
-            </tr>
-            <tr>
-                <td>Prices: Not too expenssive, but on the higher end of grocery stores</td>
-            </tr>
-            <tr>
-                <td>Products: A wide range of food and other neccessities.</td>
-            </tr>
-            <tr>
-                <td>Rating: 4.6/5</td>
-            </tr>
-        </table>
-    </body>
+    <img src = "https://www.wegmans.com/wp-content/themes/wegmans/assets/images/WegmansLogo.min.svg" alt = "Wegmans logo">
+    <table>
+        <tr>
+            <td>Description: Wegmans is a general grocery store with many of the groceries you'd need for daily life</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.wegmans.com/" target="_blank">Main Website</a></td>
+        </tr>
+        <tr>
+            <td>Accessibility: Campus Shuttle</td>
+        </tr>
+        <tr>
+            <td>Prices: Not too expenssive, but on the higher end of grocery stores</td>
+        </tr>
+        <tr>
+            <td>Products: A wide range of food and other neccessities.</td>
+        </tr>
+        <tr>
+            <td>Rating: 4.6/5</td>
+        </tr>
+    </table>
+    
 
 </article>
 
@@ -109,29 +118,28 @@ h1{
         The Market at Global Village
     </h1>
 
-    <body>
-        <img src = "https://www.rit.edu/dining/sites/rit.edu.dining/files/2024-03/Logo_The%20Market_170x170_black.png" width = 300px heigt = 300 px alt = "Picture of the Market at Global Village">
-        <table>
-            <tr>
-                <td>Description: A small market at global village with miscellaneous, easy to prepare meals and snacks</td>
-            </tr>
-            <tr>
-                <td><a href="https://www.rit.edu/dining/location/market-global-village#1" target="_blank">Main Website</a></td>
-            </tr>
-            <tr>
-                <td>Accessibility: On Campus</td>
-            </tr>
-            <tr>
-                <td>Prices: Affordable for students, takes dining dollars</td>
-            </tr>
-            <tr>
-                <td>Products: Has many snacks and drinks as well as toiletries and school supplies . Great for emergencies and parties, but not full meals.</td>
-            </tr>
-            <tr>
-                <td>Rating: 4.2/5</td>
-            </tr>
-        </table>
-    </body>
+   
+    <img src = "https://www.rit.edu/dining/sites/rit.edu.dining/files/2024-03/Logo_The%20Market_170x170_black.png" width = 300px heigt = 300 px alt = "Picture of the Market at Global Village">
+    <table>
+        <tr>
+            <td>Description: A small market at global village with miscellaneous, easy to prepare meals and snacks</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.rit.edu/dining/location/market-global-village#1" target="_blank">Main Website</a></td>
+        </tr>
+        <tr>
+            <td>Accessibility: On Campus</td>
+        </tr>
+        <tr>
+            <td>Prices: Affordable for students, takes dining dollars</td>
+        </tr>
+        <tr>
+            <td>Products: Has many snacks and drinks as well as toiletries and school supplies . Great for emergencies and parties, but not full meals.</td>
+        </tr>
+        <tr>
+            <td>Rating: 4.2/5</td>
+        </tr>
+    </table>
 
 </article>
 
@@ -142,33 +150,33 @@ h1{
         The Corner Store
     </h1>
 
-    <body>
-        <img src = "https://www.rit.edu/dining/sites/rit.edu.dining/files/2024-03/Logo_The%20Corner%20Store_170x170_black.png" width = 300px heigt = 300 px alt = "Picture of the Market at Global Village">
-        <table>
-            <tr>
-                <td>Description: A convenience store in the dorm-side tunnels</td>
-            </tr>
-            <tr>
-                <td><a href="https://www.rit.edu/dining/location/corner-store" target="_blank">Main Website</a></td>
-            </tr>
-            <tr>
-                <td>Accessibility: On Campus</td>
-            </tr>
-            <tr>
-                <td>Prices: Affordable for students, takes dining dollars</td>
-            </tr>
-            <tr>
-                <td>Products: Simmalar to the Market at Global Village, It's a convenience store.</td>
-            </tr>
-            <tr>
-                <td>Rating: 4.1/5</td>
-            </tr>
-        </table>
-    </body>
+    
+    <img src = "https://www.rit.edu/dining/sites/rit.edu.dining/files/2024-03/Logo_The%20Corner%20Store_170x170_black.png" width = 300px heigt = 300 px alt = "Picture of the Market at Global Village">
+    <table>
+        <tr>
+            <td>Description: A convenience store in the dorm-side tunnels</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.rit.edu/dining/location/corner-store" target="_blank">Main Website</a></td>
+        </tr>
+        <tr>
+            <td>Accessibility: On Campus</td>
+        </tr>
+        <tr>
+            <td>Prices: Affordable for students, takes dining dollars</td>
+        </tr>
+        <tr>
+            <td>Products: Simmalar to the Market at Global Village, It's a convenience store.</td>
+        </tr>
+        <tr>
+            <td>Rating: 4.1/5</td>
+        </tr>
+    </table>
+    
 
 </article>
 </div>
-
+</body>
 <footer>
     <b2>
         Copyright 2024
